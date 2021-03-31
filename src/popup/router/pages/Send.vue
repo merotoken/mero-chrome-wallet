@@ -320,7 +320,7 @@
 
 			storeTransaction: async function (currency, hash, recipientAddress, recipientAmount) {
 				let timestamp = moment().unix();
-				let amount = currency == 'ETH' 
+				let amount = currency == 'BNB' 
 								? ethers.utils.formatEther(recipientAmount).toString()
 								: ethers.utils.formatUnits(recipientAmount, env.tokenDecimals).toString()
 
